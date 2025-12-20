@@ -1,7 +1,18 @@
 $font-primary: 'Roboto', sans-serif;
 $font-title: 'Shrikhand',cursive;
+*{
+    text-decoration: none;
+    color: inherit;
+}
+
 body{
     font-family: $font-primary;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    .body__div{
+        width: 100%;
+        box-sizing: border-box;
+    }
 }

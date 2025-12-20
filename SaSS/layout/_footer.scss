@@ -1,0 +1,25 @@
+footer{
+    background-color: $footer-color;
+    color: white;
+    padding-bottom: 5px;
+    h3{
+        font-family: $font-title;
+        margin-left: 20px;
+        padding-top: 20px;
+    }
+    ul{
+        padding: 20px;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        li{
+            list-style: none;
+            .fa-solid{
+                margin-right: 5px;
+            }
+        }
+    }
+    
+    
+}

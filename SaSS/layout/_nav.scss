@@ -11,3 +11,16 @@
     background-color: #EAEAEA;
     gap: 17px;
 }
+
+.nav__restaurant{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    &__arrow,&__logo,&__espace{
+    }
+    &__arrow{
+    }
+    &__logo{
+    }
+}
