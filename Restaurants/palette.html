@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/942fdedd2c.js" crossosrigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/942fdedd2c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../SaSS/main.css">
     <title>La Palette du Goût</title>
 </head>
@@ -18,14 +18,13 @@
                 <div class="nav__logo"><img src="../assets/Images/logo/ohmyfood@2x.svg" alt="logo ohmyfood"></div>
                 <div class="nav__espace"></div>
             </div>
-            <div class="nav__loc">
-                <i class="fa-solid fa-location-dot"></i>
-                <p class="nav__texte">
-                    Paris, Belleville
-                </p>
-            </div>
         </nav>
-        <main>
+
+        <div class="restaurant__pics">
+            <img src="../assets/Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt=" image plats de La palette du goût">
+        </div>
+        
+        <main class="section__pics">
             <!-- entrées -->
             <section>
                 <div class="carte__title">
@@ -39,23 +38,23 @@
                             <h3>Fricassée d'escargots</h3>
                             <div class="card__contenu">
                                 <p>Au piments d'Espelette</p>
-                                <p>25$</p>
+                                <p class="card__prix">25€</p>
                             </div>
                         </div>
 
                         <div class="card">
-                            <h3>Fricassée d'escargots</h3>
+                            <h3>Foie gras de canard mi-cuit</h3>
                             <div class="card__contenu">
-                                <p>Au piments d'Espelette</p>
-                                <p>25$</p>
+                                <p>Et ses copeaux de truffe noire</p>
+                                <p class="card__prix">35€</p>
                             </div>
                         </div>
 
                         <div class="card">
-                            <h3>Fricassée d'escargots</h3>
+                            <h3>Œuf au plat</h3>
                             <div class="card__contenu">
-                                <p>Au piments d'Espelette</p>
-                                <p>25$</p>
+                                <p>Assaisonné à la truffe sur lit de caviar</p>
+                                <p class="card__prix">20€</p>
                             </div>
                         </div>
 
@@ -66,26 +65,26 @@
                     <p class="position">PLATS</p>
                     <div>
                         <div class="card">
-                            <h3>Fricassée d'escargots</h3>
+                            <h3>Filet de bœuf aux herbes</h3>
                             <div class="card__contenu">
-                                <p>Au piments d'Espelette</p>
-                                <p>25$</p>
+                                <p>Accompagné de sa ribambelle de légumes</p>
+                                <p class="card__prix">40€</p>
                             </div>
                         </div>
 
                         <div class="card">
-                            <h3>Fricassée d'escargots</h3>
+                            <h3>Parmentier de queue de bœuf</h3>
                             <div class="card__contenu">
-                                <p>Au piments d'Espelette</p>
-                                <p>25$</p>
+                                <p>À la truffe noire sur sa purée de panais</p>
+                                <p class="card__prix">35€</p>
                             </div>
                         </div>
 
                         <div class="card">
-                            <h3>Fricassée d'escargots</h3>
+                            <h3>Filet de turbot</h3>
                             <div class="card__contenu">
-                                <p>Au piments d'Espelette</p>
-                                <p>25$</p>
+                                <p>Aux agrumes</p>
+                                <p class="card__prix">44€</p>
                             </div>
                         </div>
 
@@ -96,37 +95,38 @@
                     <p class="position">DESSERTS</p>
                     <div>
                         <div class="card">
-                            <h3>Fricassée d'escargots</h3>
+                            <h3>Paris-Brest</h3>
                             <div class="card__contenu">
-                                <p>Au piments d'Espelette</p>
-                                <p>25$</p>
+                                <p>Revisité</p>
+                                <p class="card__prix">18€</p>
                             </div>
                         </div>
 
                         <div class="card">
-                            <h3>Fricassée d'escargots</h3>
+                            <h3>Macaron au chocolat d'exception</h3>
                             <div class="card__contenu">
-                                <p>Au piments d'Espelette</p>
-                                <p>25$</p>
+                                <p>Et glace à la vanille de Madagascar</p>
+                                <p class="card__prix">22€</p>
                             </div>
                         </div>
 
                         <div class="card">
-                            <h3>Fricassée d'escargots</h3>
+                            <h3>Mousse au chocolat</h3>
                             <div class="card__contenu">
-                                <p>Au piments d'Espelette</p>
-                                <p>25$</p>
+                                <p>Au piment d'Espelette et à la truffe noire</p>
+                                <p class="card__prix">23€</p>
                             </div>
                         </div>
 
                     </div>
                 </article>
-                <div class="button__position">
-                <a href="#" class="buttons">Commander</a>
-                </div>
             </section>
-            
         </main>
+
+        <div class="button__position">
+            <a href="#" class="buttons">Commander</a>
+        </div>
+
         <footer>
             <div class="footer__main">
                 <h3>ohmyfood</h3>

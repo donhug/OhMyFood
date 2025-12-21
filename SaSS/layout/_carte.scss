@@ -15,6 +15,21 @@
 }
 .position{
     margin-left: 15px;
+    font-weight: 300;
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.position::after{
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 60%;
+    height: 2px;
+    background-color: $subtle-color;
+    position: absolute;
 }
 .card{
     margin: 10px;
@@ -22,14 +37,24 @@
     padding:10px 15px 10px 15px;
     border-radius: 20px;
     box-shadow: 0px 4px 15px 0px #00000026;
-    h3,p{
-       padding: 0;
+    h3,.card__prix{
+        font-size: 18px;
+        font-weight: 400;
+        padding: 0;
         margin:0;
+    }
+    p{
+        padding: 0;
+        margin:0;
+        font-size: 14px;
+        font-weight: 30;
+    }
+    .card__prix{
+        font-size: 15px;
     }
     &__contenu{
         display: flex;
         justify-content: space-between;
         padding-top: 5px;
-
     }
 }
