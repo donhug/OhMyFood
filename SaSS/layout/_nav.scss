@@ -12,15 +12,14 @@
     gap: 17px;
 }
 
-.nav__restaurant{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    &__arrow,&__logo,&__espace{
+
+@media (min-width: 1440px) {
+    .nav__restaurant{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        height: 80px;
     }
-    &__arrow{
-    }
-    &__logo{
-    }
+
 }

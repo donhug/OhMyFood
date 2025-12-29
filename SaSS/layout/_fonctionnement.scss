@@ -15,3 +15,16 @@
         color: $primary-color;
     }
 }
+
+@media(min-width: 1440px){
+    .fonction__desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+
+        .fonctionnement__list{
+            width: 33%;
+        }
+    }
+}

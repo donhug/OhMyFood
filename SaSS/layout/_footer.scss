@@ -21,6 +21,14 @@ footer{
             }
         }
     }
-    
-    
 }
+
+@media(min-width: 1440px){
+    footer ul, footer h3{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        gap: 15px;
+    }
+}
+

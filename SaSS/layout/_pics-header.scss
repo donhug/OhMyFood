@@ -15,3 +15,9 @@
     padding-bottom: 0px;
     
 }
+
+@media(min-width: 1440px){
+    .restaurant__pics img{
+        height: 400px;
+    }
+}

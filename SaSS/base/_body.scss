@@ -4,7 +4,9 @@ $font-title: 'Shrikhand',cursive;
     text-decoration: none;
     color: inherit;
 }
-
+main{
+  
+}
 body{
     font-family: $font-primary;
     margin: 0;
@@ -15,4 +17,16 @@ body{
         width: 100%;
         box-sizing: border-box;
     }
+
 }
+
+@media(min-width: 1440px){
+    main{
+        width: 1200px;
+        margin: auto;
+    }
+}
+
+
+
+
