@@ -15,12 +15,6 @@ body .body__div {
   box-sizing: border-box;
 }
 
-@media (min-width: 1440px) {
-  main {
-    width: 1200px;
-    margin: auto;
-  }
-}
 .buttons {
   color: white;
   text-decoration: none;
@@ -251,9 +245,19 @@ footer ul li .fa-solid {
 
 @media (min-width: 1440px) {
   .restaurant__main {
-    width: 800px;
-    margin: auto;
-    padding-bottom: 10px;
+    width: 1200px;
+  }
+  .restaurant__cards {
+    width: 490px;
+  }
+  .restaurant__list {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+  .restaurant__title {
+    padding-left: 90px;
+    margin-bottom: 20px;
   }
 }
 .restaurant__pics {
