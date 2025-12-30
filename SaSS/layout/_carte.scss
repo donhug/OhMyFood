@@ -60,20 +60,14 @@
 }
 
 @media(min-width: 1440px){
-    .restaurant__main{
+    .section__pics{
         width: 1200px;
+        margin: auto;
+        margin-top: -40px;
     }
-    .restaurant__cards{
-        width: 490px;
-    }
-    .restaurant__list{
-        flex-wrap: wrap;
-        gap: 40px;
-        justify-content: center;
-    }
-    .restaurant__title{
-        
-        padding-left: 90px;
-        margin-bottom: 20px;
+    .card{
+        width: 80%;
+        margin: auto;
     }
 }
+
