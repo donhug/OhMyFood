@@ -1,0 +1,19 @@
+/* carte des restaurant/ index */
+
+.restaurant__cards{
+    transition: transform 300ms;
+   &:hover{
+        transform: scale(1.05);
+    }
+}
+
+/*coeur*/
+
+/* bouttons toutes les pages*/
+
+.buttons{
+    transition: filtre 0.3s;
+    &:hover{
+        filter: brightness(1.07);
+    }
+}
