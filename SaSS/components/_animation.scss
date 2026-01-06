@@ -17,3 +17,21 @@
         filter: brightness(1.07);
     }
 }
+
+/* volet sur les plats*/
+.card:hover{ 
+        .volet__hover{
+            width:60px;
+        }
+    }
+
+.volet__hover{
+    position:absolute;
+    top:0;
+    right:0;
+    width:0px;
+    height:100%;
+    background-color: $tertiary-color;
+    border-radius:0 20px 20px 0;
+    transition:width 200ms ;
+}
