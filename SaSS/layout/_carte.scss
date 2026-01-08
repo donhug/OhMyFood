@@ -54,6 +54,8 @@
     .card__prix{
         font-size: 15px;
         white-space: nowrap;
+        transition:width 200ms ;
+        
     }
     &__contenu{
         display: flex;
