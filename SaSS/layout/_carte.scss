@@ -64,7 +64,21 @@
     }
     
 }
-
+.coeur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    transition: opacity 200ms ease;
+    opacity: 1;
+}
+.coeur__hover{
+    opacity: 0;
+    background-image: $gradient-color;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
 
 @media(min-width: 1440px){
     .section__pics{
