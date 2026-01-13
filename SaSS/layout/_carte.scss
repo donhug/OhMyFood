@@ -54,7 +54,7 @@
     .card__prix{
         font-size: 15px;
         white-space: nowrap;
-        transition:width 200ms ;
+        transition:transform 150ms ease ;
         
     }
     &__contenu{
@@ -76,8 +76,15 @@
     opacity: 0;
     background-image: $gradient-color;
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     display: inline-block;
+}
+.coeur__list{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 20px;
 }
 
 @media(min-width: 1440px){

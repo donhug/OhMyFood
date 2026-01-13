@@ -33,13 +33,18 @@
         width:60px;
     }
     .card__prix{
-        width: 90px;
+        transform: translateX(-50px);
     }
         
     }
 
 .volet__hover{
     position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 20px;
     top:0;
     right:0;
     width:0px;
