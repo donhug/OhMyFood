@@ -1,69 +1,84 @@
+/*animation pour le loader*/
 .loader{
+  animation: loader 0.5s 1s forwards;
   opacity:1;
   position:fixed;
-  top: 50%;
-  left: 50%;
+  z-index:99;
+  width:100%;
+  height:100%;
   display: flex;
   align-items:center;
   justify-content:center;
   gap:5px;
-  &__1, &__3,&__5{
-    border: 10px solid #9356DC;
-    height:1px;
-    animation: barre-grandit 1.5s ease-in-out forwards ;
-    animation-duration:3s;
+  background-color:#EAEAEA;
+  &__bar{
+    border: 10px solid transparent;
+    animation: barre-grandit 1s ease-in-out infinite ;
   }
-  &__2, &__4{
-    border: 10px solid #FF79DA;
-    animation:barre-grandit-2 1.5s ease-in-out forwards ;
-    animation-duration:3s;
+  &__1{
+    border-color:#9356DC;
+    animation-delay:0.05s;
+  }
+  &__2{
+     border-color:#FF79DA;
+    animation-delay:0.1s;
   }
   &__3{
-    border: 10px solid #99E2D0;
+     border-color:#99E2D0;
+    animation-delay:0.15s;
   }
   &__4{
-    border: 10px solid #353535;
+    border-color:#353535;
+    animation-delay:0.20s;
   }
   &__5{
-    border:10px solid #9356DC;
+    border-color:#9356DC;
+    animation-delay:0.25s;
   }
 }
+
 @keyframes barre-grandit{
   0%{
-    transform: scaleX(0.1);
+    transform: scaleY(0.1);
   }
   50%{
     transform: scaleY(3);
   }
   100%{
-    transform: scaleX(0.1);
-    opacity:0;
+    transform: scaleY(0.1);
   }
 }
 
-@keyframes barre-grandit-2{
-  0%{
-    transform: scaleY(3);
-  }
-  50%{
-    transform: scaleX(0.1);
-  }
-  100%{
-    transform: scaleY(3);
-    opacity:0;
-  }
-}
+@keyframes loader {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        main {
+            background-color: #F6F6F6;
+        }
 
-/*body{
+
+/*apparition liste*/
+@keyframes fadeIn {
+  0% {
     opacity: 0;
-    animation: affichage 3s ease-in-out forwards;
-    animation-delay: 2s;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@keyframes affichage{
-  0%{
-        opacity:0;
+
+/*apparition card restaurants*/
+@keyframes cards {
+  0% {
+    opacity: 0;
   }
-  100%{
-        opacity:1;
+  100% {
+    opacity: 1;
   }
-}*/
+}

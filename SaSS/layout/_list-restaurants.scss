@@ -18,6 +18,7 @@
         background-color: white;
         border-radius: 30px;
         width: 100%;
+        animation: cards 5s ease-in-out forwards;
     }
     &__nom{
         display: flex;
@@ -38,8 +39,22 @@
         height: auto;
         display: inline-flex;
     }
+    &__new{
+        position: absolute;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-color:$new-color;
+        color:$new-text-color;
+        border-radius:5px;
+        width:80px;
+        height:29px;
+        top:15px;
+        right:15px;
+    }
     
     article{
+        position:relative;
         border-radius: 20px;
         img{
             object-fit: cover;
@@ -47,6 +62,7 @@
             height: 230px;
             border-radius: 30px 30px 0 0;
         }
+
     }
 }
 .like{

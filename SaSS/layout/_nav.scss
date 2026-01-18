@@ -11,7 +11,13 @@
     background-color: #EAEAEA;
     gap: 17px;
 }
-
+.nav__restaurant{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    height: 80px;
+}
 
 @media (min-width: 1440px) {
     .nav__restaurant{

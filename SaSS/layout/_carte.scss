@@ -69,7 +69,7 @@
     top: 0;
     left: 0;
     font-size: 20px;
-    transition: opacity 200ms ease;
+    transition: opacity 300ms ease;
     opacity: 1;
 }
 .coeur__hover{
@@ -79,6 +79,7 @@
     background-clip: text;
     color: transparent;
     display: inline-block;
+    transition: opacity 300ms ease;
 }
 .coeur__list{
     position: absolute;

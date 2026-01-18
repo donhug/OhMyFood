@@ -1,71 +1,84 @@
+/*animation pour le loader*/
 .loader {
+  animation: loader 0.5s 1s forwards;
   opacity: 1;
   position: fixed;
-  top: 50%;
-  left: 50%;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
+  background-color: #EAEAEA;
 }
-.loader__1, .loader__3, .loader__5 {
-  border: 10px solid #9356DC;
-  height: 1px;
-  animation: barre-grandit 1.5s ease-in-out forwards;
-  animation-duration: 3s;
+.loader__bar {
+  border: 10px solid transparent;
+  animation: barre-grandit 1s ease-in-out infinite;
 }
-.loader__2, .loader__4 {
-  border: 10px solid #FF79DA;
-  animation: barre-grandit-2 1.5s ease-in-out forwards;
-  animation-duration: 3s;
+.loader__1 {
+  border-color: #9356DC;
+  animation-delay: 0.05s;
+}
+.loader__2 {
+  border-color: #FF79DA;
+  animation-delay: 0.1s;
 }
 .loader__3 {
-  border: 10px solid #99E2D0;
+  border-color: #99E2D0;
+  animation-delay: 0.15s;
 }
 .loader__4 {
-  border: 10px solid #353535;
+  border-color: #353535;
+  animation-delay: 0.2s;
 }
 .loader__5 {
-  border: 10px solid #9356DC;
+  border-color: #9356DC;
+  animation-delay: 0.25s;
 }
 
 @keyframes barre-grandit {
   0% {
-    transform: scaleX(0.1);
+    transform: scaleY(0.1);
   }
   50% {
     transform: scaleY(3);
   }
   100% {
-    transform: scaleX(0.1);
-    opacity: 0;
+    transform: scaleY(0.1);
   }
 }
-@keyframes barre-grandit-2 {
+@keyframes loader {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+main {
+  background-color: #F6F6F6;
+}
+
+/*apparition liste*/
+@keyframes fadeIn {
   0% {
-    transform: scaleY(3);
-  }
-  50% {
-    transform: scaleX(0.1);
+    opacity: 0;
   }
   100% {
-    transform: scaleY(3);
-    opacity: 0;
+    opacity: 1;
   }
 }
-/*body{
+/*apparition card restaurants*/
+@keyframes cards {
+  0% {
     opacity: 0;
-    animation: affichage 3s ease-in-out forwards;
-    animation-delay: 2s;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@keyframes affichage{
-  0%{
-        opacity:0;
-  }
-  100%{
-        opacity:1;
-  }
-}*/
 * {
   text-decoration: none;
   color: inherit;
@@ -190,20 +203,36 @@ footer ul li .fa-solid {
   }
 }
 .fonctionnement {
-  margin: 10px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background-color: white;
 }
 .fonctionnement__list {
   position: relative;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 10px;
   padding: 20px;
   border-radius: 20px;
   background-color: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   margin-left: 10px;
+  margin-top: 15px;
+  animation: fadeIn 5s ease-in-out forwards;
+}
+.fonctionnement__desktop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.fonctionnement__txt {
+  display: flex;
+  gap: 15px;
 }
 .fonctionnement .fa-store {
   color: #9356DC;
@@ -224,13 +253,13 @@ footer ul li .fa-solid {
 }
 
 @media (min-width: 1440px) {
-  .fonction__desktop {
+  .fonctionnement__desktop {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 50px;
   }
-  .fonction__desktop .fonctionnement__list {
+  .fonctionnement__desktop .fonctionnement__list {
     width: 20%;
   }
   .fonctionnement__title {
@@ -256,6 +285,7 @@ footer ul li .fa-solid {
   background-color: white;
   border-radius: 30px;
   width: 100%;
+  animation: cards 5s ease-in-out forwards;
 }
 .restaurant__nom {
   display: flex;
@@ -276,7 +306,21 @@ footer ul li .fa-solid {
   height: auto;
   display: inline-flex;
 }
+.restaurant__new {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  color: #008766;
+  border-radius: 5px;
+  width: 80px;
+  height: 29px;
+  top: 15px;
+  right: 15px;
+}
 .restaurant article {
+  position: relative;
   border-radius: 20px;
 }
 .restaurant article img {
@@ -326,6 +370,14 @@ footer ul li .fa-solid {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   background-color: #EAEAEA;
   gap: 17px;
+}
+
+.nav__restaurant {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  height: 80px;
 }
 
 @media (min-width: 1440px) {
@@ -411,7 +463,7 @@ footer ul li .fa-solid {
   top: 0;
   left: 0;
   font-size: 20px;
-  transition: opacity 200ms ease;
+  transition: opacity 300ms ease;
   opacity: 1;
 }
 
@@ -422,6 +474,7 @@ footer ul li .fa-solid {
   background-clip: text;
   color: transparent;
   display: inline-block;
+  transition: opacity 300ms ease;
 }
 
 .coeur__list {
