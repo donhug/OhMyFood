@@ -32,6 +32,8 @@
     position: absolute;
 }
 .card{
+    opacity: 0;
+    animation: apparition 1s ease-in-out forwards;
     position:relative;
     margin: 10px;
     gap: 10px;
@@ -44,6 +46,7 @@
         font-weight: 400;
         padding: 0;
         margin:0;
+        
     }
     p{
         padding: 0;
@@ -61,8 +64,22 @@
         display: flex;
         justify-content: space-between;
         padding-top: 5px;
+        white-space: nowrap;
     }
     
+}
+.over{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: calc(100% - 60px);
+}
+.plat{
+  animation-delay: 0.5s;
+}
+.dessert{
+  animation-delay: 1s;
 }
 .coeur{
     position: absolute;

@@ -15,10 +15,12 @@
     }
 
     &__cards{
+        opacity: 0;
         background-color: white;
         border-radius: 30px;
         width: 100%;
-        animation: cards 5s ease-in-out forwards;
+        animation: cards 1s ease-in-out forwards;
+        animation-delay: 1.5s;
     }
     &__nom{
         display: flex;
@@ -52,7 +54,15 @@
         top:15px;
         right:15px;
     }
-    
+    .note{
+        animation-delay: 2s;
+    }
+    .francaise{
+        animation-delay: 2.5s;
+    }
+    .delice{
+        animation-delay: 3s;
+    }
     article{
         position:relative;
         border-radius: 20px;

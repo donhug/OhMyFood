@@ -1,6 +1,8 @@
+
 /*animation pour le loader*/
+
 .loader{
-  animation: loader 0.5s 1s forwards;
+  animation: loader 3s ease-in-out forwards;
   opacity:1;
   position:fixed;
   z-index:99;
@@ -50,21 +52,20 @@
 }
 
 @keyframes loader {
-            from {
-                opacity: 1;
-            }
-            to {
-                opacity: 0;
-                visibility: hidden;
-            }
-        }
-        main {
-            background-color: #F6F6F6;
-        }
 
-
-/*apparition liste*/
-@keyframes fadeIn {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+main {
+  background-color: #F6F6F6;
+}
+/*apparition card restaurants*/
+@keyframes cards {
   0% {
     opacity: 0;
   }
@@ -74,11 +75,15 @@
 }
 
 /*apparition card restaurants*/
-@keyframes cards {
+
+
+@keyframes apparition {
   0% {
     opacity: 0;
+    transform: translateX(20px);
   }
   100% {
     opacity: 1;
+    transform: translateX(0);
   }
 }

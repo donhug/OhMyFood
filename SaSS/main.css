@@ -1,6 +1,6 @@
 /*animation pour le loader*/
 .loader {
-  animation: loader 0.5s 1s forwards;
+  animation: loader 3s ease-in-out forwards;
   opacity: 1;
   position: fixed;
   z-index: 99;
@@ -61,8 +61,8 @@ main {
   background-color: #F6F6F6;
 }
 
-/*apparition liste*/
-@keyframes fadeIn {
+/*apparition card restaurants*/
+@keyframes cards {
   0% {
     opacity: 0;
   }
@@ -71,12 +71,14 @@ main {
   }
 }
 /*apparition card restaurants*/
-@keyframes cards {
+@keyframes apparition {
   0% {
     opacity: 0;
+    transform: translateX(20px);
   }
   100% {
     opacity: 1;
+    transform: translateX(0);
   }
 }
 * {
@@ -195,11 +197,20 @@ footer ul li .fa-solid {
 }
 
 @media (min-width: 1440px) {
-  footer ul, footer h3 {
+  .footer__main {
     display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+  footer ul {
     flex-direction: row;
-    justify-content: right;
+    padding-top: 40px;
     gap: 15px;
+  }
+  footer h3 {
+    padding-right: 15px;
   }
 }
 .fonctionnement {
@@ -221,7 +232,6 @@ footer ul li .fa-solid {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   margin-left: 10px;
   margin-top: 15px;
-  animation: fadeIn 5s ease-in-out forwards;
 }
 .fonctionnement__desktop {
   display: flex;
@@ -282,10 +292,12 @@ footer ul li .fa-solid {
   gap: 20px;
 }
 .restaurant__cards {
+  opacity: 0;
   background-color: white;
   border-radius: 30px;
   width: 100%;
-  animation: cards 5s ease-in-out forwards;
+  animation: cards 1s ease-in-out forwards;
+  animation-delay: 1.5s;
 }
 .restaurant__nom {
   display: flex;
@@ -318,6 +330,15 @@ footer ul li .fa-solid {
   height: 29px;
   top: 15px;
   right: 15px;
+}
+.restaurant .note {
+  animation-delay: 2s;
+}
+.restaurant .francaise {
+  animation-delay: 2.5s;
+}
+.restaurant .delice {
+  animation-delay: 3s;
 }
 .restaurant article {
   position: relative;
@@ -427,6 +448,8 @@ footer ul li .fa-solid {
 }
 
 .card {
+  opacity: 0;
+  animation: apparition 1s ease-in-out forwards;
   position: relative;
   margin: 10px;
   gap: 10px;
@@ -456,6 +479,23 @@ footer ul li .fa-solid {
   display: flex;
   justify-content: space-between;
   padding-top: 5px;
+  white-space: nowrap;
+}
+
+.over {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: calc(100% - 60px);
+}
+
+.plat {
+  animation-delay: 0.5s;
+}
+
+.dessert {
+  animation-delay: 1s;
 }
 
 .coeur {
