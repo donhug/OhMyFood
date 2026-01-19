@@ -219,6 +219,9 @@ footer ul li .fa-solid {
   gap: 20px;
   background-color: white;
 }
+.fonctionnement__title {
+  margin-left: 20px;
+}
 .fonctionnement__list {
   position: relative;
   display: flex;
@@ -262,6 +265,20 @@ footer ul li .fa-solid {
   font-weight: bold;
 }
 
+@media (min-width: 1024px) {
+  .fonctionnement__desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+  .fonctionnement__desktop .fonctionnement__list {
+    width: 21%;
+  }
+  .fonctionnement__title {
+    padding-left: 55px;
+  }
+}
 @media (min-width: 1440px) {
   .fonctionnement__desktop {
     display: flex;
@@ -273,7 +290,7 @@ footer ul li .fa-solid {
     width: 20%;
   }
   .fonctionnement__title {
-    padding-left: 320px;
+    padding-left: 300px;
   }
 }
 .restaurant {
@@ -359,6 +376,25 @@ footer ul li .fa-solid {
   font-size: 20px;
 }
 
+@media (min-width: 1024px) {
+  .restaurant__main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    gap: 40px;
+  }
+  .restaurant__cards {
+    width: calc(50% - 20px);
+  }
+  .restaurant__list {
+    gap: 40px;
+    justify-content: center;
+  }
+  .restaurant__title {
+    padding-left: 0px;
+    margin-top: 20px;
+  }
+}
 @media (min-width: 1440px) {
   .restaurant__main {
     display: flex;
@@ -367,14 +403,14 @@ footer ul li .fa-solid {
     gap: 40px;
   }
   .restaurant__cards {
-    width: 490px;
+    width: calc(50% - 20px);
   }
   .restaurant__list {
     gap: 40px;
     justify-content: center;
   }
   .restaurant__title {
-    padding-left: 90px;
+    padding-left: 0px;
     margin-top: 20px;
   }
 }

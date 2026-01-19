@@ -81,6 +81,25 @@
     right: 10px;   
     font-size: 20px;
 }
+@media(min-width: 1024px){
+    .restaurant__main{
+        display: flex;
+        flex-wrap: wrap;
+        width: 1000px;
+        gap: 40px;
+    }
+    .restaurant__cards{
+        width: calc(50% - 20px);
+    }
+    .restaurant__list{
+        gap: 40px;
+        justify-content: center;
+    }
+    .restaurant__title{
+        padding-left: 0px;
+        margin-top: 20px;
+    }
+}
 
 @media(min-width: 1440px){
     .restaurant__main{
@@ -90,14 +109,14 @@
         gap: 40px;
     }
     .restaurant__cards{
-        width: 490px;
+        width: calc(50% - 20px);
     }
     .restaurant__list{
         gap: 40px;
         justify-content: center;
     }
     .restaurant__title{
-        padding-left: 90px;
+        padding-left: 0px;
         margin-top: 20px;
     }
 }
